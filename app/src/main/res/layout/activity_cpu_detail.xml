@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#121212"> <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="CPU 核心频率实时监控"
+    android:textColor="#00FFCC"
+    android:textSize="22sp"
+    android:textStyle="bold"
+    android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:id="@+id/tv_cpu_detail_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="正在读取核心数据..."
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:lineSpacingExtra="8dp"
+        android:fontFamily="monospace" /> </LinearLayout>
