@@ -4,30 +4,30 @@
     android:layout_height="match_parent"
     android:background="#000000"
     android:padding="20dp"
-    android:fitsSystemWindows="true"> <LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical">
+    android:fitsSystemWindows="true">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="作者的话"
-        android:textColor="#00FFCC"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="16dp" />
-
-    <TextView
-        android:id="@+id/tv_about_content"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text=
-            "开发人员：Marcus Hu\n
-Developers: Marcus Hu\n
-组员：卢昶洁 李嘉雯 王思卜 李欣怡 宋雪\n
-Members: 卢昶洁 李嘉雯 王思卜 李欣怡 宋雪\n"
-        android:textColor="#FFFFFF"
-        android:textSize="16sp"
-        android:lineSpacingExtra="8dp" /> </LinearLayout>
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="作者的话"
+            android:textColor="#00FFCC"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/tv_about_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:lineSpacingExtra="4dp"
+            android:textSize="16sp"
+            android:text="开发人员：Marcus Hu\nDevelopers: Marcus Hu\n\n组员：卢昶洁 李嘉雯 王思卜 李欣怡 宋雪\nMembers: 卢昶洁 李嘉雯 王思卜 李欣怡 宋雪" />
+
+    </LinearLayout>
 </ScrollView>
