@@ -38,11 +38,11 @@ public class AboutFragment extends Fragment {
             // 1. 准备数据
             List<ToolItem> aboutItems = new ArrayList<>();
             // 合并你的“作者的话”和“应用信息”
-            aboutItems.add(new ToolItem("作者的话", AboutDetailActivity.class));
-            aboutItems.add(new ToolItem("应用名称：432 智能工具箱", null));
-            aboutItems.add(new ToolItem("当前版本：Inside v3", null));
-            aboutItems.add(new ToolItem("开发者：Marcus Hu", null));
-            aboutItems.add(new ToolItem("开源协议：暂无", null));
+            aboutItems.add(new ToolItem("About us", AboutDetailActivity.class));
+            aboutItems.add(new ToolItem("Name：432 Tool box", null));
+            aboutItems.add(new ToolItem("Version：Inside v3", null));
+            aboutItems.add(new ToolItem("Developer：Marcus Hu", null));
+            aboutItems.add(new ToolItem("Open Source: MIT", null));
 
             // 2. 绑定适配器
             MainAdapter adapter = new MainAdapter(aboutItems, position -> {
@@ -52,7 +52,7 @@ public class AboutFragment extends Fragment {
                     startActivity(new android.content.Intent(getActivity(), item.getTargetActivity()));
                 } else {
                     // 否则只弹 Toast
-                    Toast.makeText(getActivity(), "信息：" + item.getTitle(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getActivity(), item.getTitle(), Toast.LENGTH_SHORT).show();
                 }
             });
 

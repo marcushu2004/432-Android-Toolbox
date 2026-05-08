@@ -27,18 +27,18 @@ public class BatteryDetailActivity extends AppCompatActivity {
             float batteryPct = level * 100 / (float) scale;
 
             // 转换充电状态文字
-            String statusString = "未知";
-            if (status == BatteryManager.BATTERY_STATUS_CHARGING) statusString = "正在充电 ⚡";
-            if (status == BatteryManager.BATTERY_STATUS_DISCHARGING) statusString = "放电中";
-            if (status == BatteryManager.BATTERY_STATUS_FULL) statusString = "已充满";
+            String statusString = "Unknow";
+            if (status == BatteryManager.BATTERY_STATUS_CHARGING) statusString = "Charging ⚡";
+            if (status == BatteryManager.BATTERY_STATUS_DISCHARGING) statusString = "Discharging";
+            if (status == BatteryManager.BATTERY_STATUS_FULL) statusString = "Full";
 
-            String healthStatus = "未知";
+            String healthStatus = "Unknow";
             switch (health) {
-                case BatteryManager.BATTERY_HEALTH_GOOD: healthStatus = "良好"; break;
-                case BatteryManager.BATTERY_HEALTH_OVERHEAT: healthStatus = "过热"; break;
-                case BatteryManager.BATTERY_HEALTH_DEAD: healthStatus = "损坏/报废"; break;
-                case BatteryManager.BATTERY_HEALTH_OVER_VOLTAGE: healthStatus = "电压过高"; break;
-                case BatteryManager.BATTERY_HEALTH_COLD: healthStatus = "温度过低"; break;
+                case BatteryManager.BATTERY_HEALTH_GOOD: healthStatus = "Good"; break;
+                case BatteryManager.BATTERY_HEALTH_OVERHEAT: healthStatus = "Overheat"; break;
+                case BatteryManager.BATTERY_HEALTH_DEAD: healthStatus = "Dead"; break;
+                case BatteryManager.BATTERY_HEALTH_OVER_VOLTAGE: healthStatus = "Over Voltage"; break;
+                case BatteryManager.BATTERY_HEALTH_COLD: healthStatus = "Cold"; break;
             }
 
             StringBuilder sb = new StringBuilder();

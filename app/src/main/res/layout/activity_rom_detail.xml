@@ -9,7 +9,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ROM 存储空间"
+        android:text="ROM Storage Space"
         android:textColor="#00FFCC"
         android:textSize="24sp"
         android:textStyle="bold" />
@@ -32,7 +32,7 @@
                 android:id="@+id/tv_rom_percent"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="存储占用: 0%"
+                android:text="Storage Usage: 0%"
                 android:textColor="#00FFCC"
                 android:textSize="28sp"
                 android:textStyle="bold" />
@@ -49,7 +49,7 @@
                 android:id="@+id/tv_rom_details"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="正在读取存储信息..."
+                android:text="Reading..."
                 android:textColor="#FFFFFF"
                 android:textSize="16sp"
                 android:lineSpacingExtra="8dp" />

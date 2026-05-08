@@ -14,7 +14,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="作者的话"
+            android:text="About"
             android:textColor="#00FFCC"
             android:textSize="22sp"
             android:textStyle="bold"
